@@ -72,8 +72,6 @@ def process_url(url):
         # Split audio into chunks of 24.5MB each
         duration_millis = 1000000  # around 24.5 MB
         chunk_length = len(audio) // duration_millis + 1
-        print(f'Chunk length: {chunk_length}')
-        print(f'Type of Chunk Length: {type(chunk_length)}')
         chunk_length = int(chunk_length)
         chunks = [audio[i*duration_millis:(i+1)*duration_millis] for i in range(chunk_length)]
 
@@ -115,7 +113,7 @@ with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
     futures = {}
     # For each URL in the file...
     count = 0
-    LIMIT = 10
+    LIMIT = 20
     for url in urls:
         url = url.strip()  # Remove leading/trailing whitespace
 
@@ -137,12 +135,8 @@ with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
     for future in concurrent.futures.as_completed(futures):
         url = futures[future]
         try:
-            print("About to get data")
             data = future.result()
+            print(f"Got data: {data} for URL: {url}")
             # write the output json file
-            print(f'Writing output for {url}')
-            with open(os.path.join(output_dir, f'{data["id"]}.json'), 'w') as f:
-                print("Writing to file")
-                json.dump(data, f)
         except Exception as e:
             print(f'An error occurred with {url}: {e}')
