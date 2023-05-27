@@ -6,6 +6,8 @@ import threading
 import json
 from datetime import datetime
 from dotenv import load_dotenv
+import concurrent.futures
+from concurrent.futures import ThreadPoolExecutor
 
 load_dotenv()
 
@@ -101,15 +103,22 @@ def process_url(url):
                 "timestamp": upload_date.strftime("%Y-%m-%dT%H:%M:%S")
             }, json_file)
 
+# Define the maximum number of threads to run concurrently
+MAX_WORKERS = 5
+
 # Open the file containing the video URLs
 with open('joschabach/all_urls.txt', 'r') as url_file:
-    threads = []
+    urls = url_file.read().splitlines()
+
+# Create a ThreadPoolExecutor
+with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    futures = {}
     # For each URL in the file...
     count = 0
-    LIMIT = 5
-    for url in url_file:
-        
+    LIMIT = 10
+    for url in urls:
         url = url.strip()  # Remove leading/trailing whitespace
+
         # Check if it already exists in the output directory
         video_id = url.split('=')[1]
         json_filename = os.path.join(output_dir, f'{video_id}.json')
@@ -120,14 +129,20 @@ with open('joschabach/all_urls.txt', 'r') as url_file:
         count += 1
         if count > LIMIT:
             break
-
-        t = threading.Thread(target=process_url, args=(url,))
-        threads.append(t)
-        t.start()
         
+        # Submit tasks to the executor
+        futures[executor.submit(process_url, url)] = url
 
-    # Wait for all threads to finish
-    for t in threads:
-        t.join()
-
-print("All videos processed.")
+    # Wait for all tasks to complete
+    for future in concurrent.futures.as_completed(futures):
+        url = futures[future]
+        try:
+            print("About to get data")
+            data = future.result()
+            # write the output json file
+            print(f'Writing output for {url}')
+            with open(os.path.join(output_dir, f'{data["id"]}.json'), 'w') as f:
+                print("Writing to file")
+                json.dump(data, f)
+        except Exception as e:
+            print(f'An error occurred with {url}: {e}')
