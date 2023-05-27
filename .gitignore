@@ -1,0 +1,8 @@
+.env
+
+joschabach/outputs/*
+joschabach/outputs_multithreaded/*
+
+old/*
+
+.venv/

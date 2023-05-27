@@ -1,35 +1,5 @@
-Playlist: chaos_communication_congress
-https://www.youtube.com/watch?v=e3K5UxWRRuY
-https://www.youtube.com/watch?v=K5nJ5l6dl2s
-https://www.youtube.com/watch?v=WRdJCFEqFTU
-https://www.youtube.com/watch?v=lKQ0yaEJjok
-https://www.youtube.com/watch?v=nlutwZ0rUUs
-
-Playlist: panels
-https://www.youtube.com/watch?v=p-OYPRhqRCg
-https://www.youtube.com/watch?v=ApHnqHfFWBk
-https://www.youtube.com/watch?v=6xHVtgwNBcY
-https://www.youtube.com/watch?v=UdCmqoZTCX0
-https://www.youtube.com/watch?v=autlzkN4O5s
-https://www.youtube.com/watch?v=O_5e_WSNedE
-https://www.youtube.com/watch?v=NEf8LnTD0AA
-https://www.youtube.com/watch?v=IncnIIpeKVM
-https://www.youtube.com/watch?v=AormvNiBmdw
-https://www.youtube.com/watch?v=0CyJV7manUw
-https://www.youtube.com/watch?v=K78hH4IfXF8
-https://www.youtube.com/watch?v=_TzEHP99EmE
-https://www.youtube.com/watch?v=pgW59kIiqvo
-https://www.youtube.com/watch?v=1UvMApeVA7s
-https://www.youtube.com/watch?v=LJLxDVigHQA
-https://www.youtube.com/watch?v=D8wxThDlVBc
-https://www.youtube.com/watch?v=RGoaDdvsp6k
-https://www.youtube.com/watch?v=le3VB7eeb4s
-https://www.youtube.com/watch?v=zX34KE6hSag
-https://www.youtube.com/watch?v=PT5eb0pX3-c
-https://www.youtube.com/watch?v=Znb35oibx0I
-https://www.youtube.com/watch?v=2OaP3mEHOws
-
-Playlist: podcasts_and_interviews
+https://www.youtube.com/watch?v=kgMFnfB5E_A
+https://www.youtube.com/watch?v=6HOjKa34im8
 https://www.youtube.com/watch?v=UF3jnF23DNk
 https://www.youtube.com/watch?v=rIpUf-Vy2JA
 https://www.youtube.com/watch?v=JcYNhOgQ29I
@@ -72,8 +42,6 @@ https://www.youtube.com/watch?v=MVm9FVfGrFQ
 https://www.youtube.com/watch?v=szSH59xhZvo
 https://www.youtube.com/watch?v=DTxvEReJjp0
 https://www.youtube.com/watch?v=UvtYTClRSes
-
-Playlist: presentations
 https://www.youtube.com/watch?v=uc112kET-i0
 https://www.youtube.com/watch?v=_TzEHP99EmE
 https://www.youtube.com/watch?v=b6oekXIQ-LM
@@ -103,3 +71,27 @@ https://www.youtube.com/watch?v=Rgjw8O3vLBs
 https://www.youtube.com/watch?v=JGHbMbawq6I
 https://www.youtube.com/watch?v=kf6B3ipgF-Y
 https://www.youtube.com/watch?v=84AneLdop_A
+https://www.youtube.com/watch?v=p-OYPRhqRCg
+https://www.youtube.com/watch?v=6xHVtgwNBcY
+https://www.youtube.com/watch?v=UdCmqoZTCX0
+https://www.youtube.com/watch?v=autlzkN4O5s
+https://www.youtube.com/watch?v=NEf8LnTD0AA
+https://www.youtube.com/watch?v=IncnIIpeKVM
+https://www.youtube.com/watch?v=AormvNiBmdw
+https://www.youtube.com/watch?v=0CyJV7manUw
+https://www.youtube.com/watch?v=K78hH4IfXF8
+https://www.youtube.com/watch?v=pgW59kIiqvo
+https://www.youtube.com/watch?v=1UvMApeVA7s
+https://www.youtube.com/watch?v=LJLxDVigHQA
+https://www.youtube.com/watch?v=D8wxThDlVBc
+https://www.youtube.com/watch?v=RGoaDdvsp6k
+https://www.youtube.com/watch?v=le3VB7eeb4s
+https://www.youtube.com/watch?v=zX34KE6hSag
+https://www.youtube.com/watch?v=PT5eb0pX3-c
+https://www.youtube.com/watch?v=Znb35oibx0I
+https://www.youtube.com/watch?v=2OaP3mEHOws
+https://www.youtube.com/watch?v=e3K5UxWRRuY
+https://www.youtube.com/watch?v=K5nJ5l6dl2s
+https://www.youtube.com/watch?v=WRdJCFEqFTU
+https://www.youtube.com/watch?v=lKQ0yaEJjok
+https://www.youtube.com/watch?v=nlutwZ0rUUs
